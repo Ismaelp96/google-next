@@ -34,13 +34,13 @@ export default function HomeSearch() {
         onSubmit={handleSubmit}
         className='flex items-center w-full mt-5 mx-auto max-w-[90%] border-gray-200 px-5 py-3 rounded-full shadow-sm  hover:shadow-md focus-within:shadow-md transition-shadow sm:max-w-xl lg:max-w-2xl'
       >
-        <AiOutlineSearch className='text-xl text-gray-500 mr-3' />
+        <AiOutlineSearch className='text-xl text-gray-500 mr-3 cursor-pointer' />
         <input
           type='text'
           className='flex-grow focus:outline-none'
           onChange={(e) => setInput(e.target.value)}
         />
-        <BsFillMicFill className='text-lg' />
+        <BsFillMicFill className='text-lg cursor-pointer' />
       </form>
       <div className='flex flex-col space-y-2 sm:space-y-0 justify-center sm:flex-row mt-8 sm:space-x-4'>
         <button
