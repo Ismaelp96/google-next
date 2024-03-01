@@ -1,5 +1,6 @@
-import WebSearchResults from '@/components/WebSearchResults';
 import Link from 'next/link';
+
+import WebSearchResults from '@/components/WebSearchResults';
 
 export default async function WebSearchPage({ searchParams }) {
   const response =
