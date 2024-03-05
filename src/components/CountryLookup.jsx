@@ -7,11 +7,12 @@ export default function CountryLookup() {
 
   useEffect(() => {
     const getCountry = async () => {
-      const response = await fetch('https://extreme-ip-lookup.com/json')
+      const response = await fetch(`https://extreme-ip-lookup.com/json/?key=${process.env.NEXT_PUBLIC_IP_API_KEY}`)
         .then((res) => res.json())
         .then((data) => data.country);
       setCountry(response);
     };
+    getCountry()
   }, []);
 
   return <div>{country}</div>;
